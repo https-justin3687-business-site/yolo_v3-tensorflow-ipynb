@@ -1,0 +1,4 @@
+val url = URL("https://wikipedia.org")
+val urlConnection: URLConnection = url.openConnection()
+val inputStream: InputStream = urlConnection.getInputStream()
+copyInputStreamToOutputStream(inputStream, System.out)
