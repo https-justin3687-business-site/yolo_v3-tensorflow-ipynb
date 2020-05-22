@@ -1,0 +1,4 @@
+URL url = new URL("https://wikileaks.org");
+URLConnection urlConnection = url.openConnection();
+InputStream in = urlConnection.getInputStream();
+copyInputStreamToOutputStream(in, System.out);
